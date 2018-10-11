@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-
 def plot_history(hist):
     height = (len(hist.history)+1)//4+1
     figs, axes = plt.subplots(height, 2, figsize=(15,5*height))
