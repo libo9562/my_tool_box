@@ -1,4 +1,4 @@
-import matplotlib.plot as plt
+import matplotlib.pyplot as plt
 
 def plot_history(hist):
     height = (len(hist.history)+1)//4+1
