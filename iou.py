@@ -1,3 +1,6 @@
+import tensorflow as tf
+import numpy as np
+ß
 def get_iou_vector(A, B):
     # Numpy version
     assert len(A.shape) == len(B.shape)
