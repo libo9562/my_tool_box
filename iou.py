@@ -1,9 +1,6 @@
-import tensorflow as tf
-import numpy as np
-
 def get_iou_vector(A, B):
     # Numpy version
-    assert A.shape == B.shape
+    assert len(A.shape) == len(B.shape)
     metric = 0.0
     for t, p in zip(A,B):
         true = np.sum(t)
