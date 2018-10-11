@@ -1,6 +1,3 @@
-import tensorflow as tf
-from keras import backend as K
-
 # code download from: https://github.com/bermanmaxim/LovaszSoftmax
 def lovasz_grad(gt_sorted):
     """
