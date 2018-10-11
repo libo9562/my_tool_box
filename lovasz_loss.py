@@ -84,7 +84,7 @@ def flatten_binary_scores(scores, labels, ignore=None):
 
 def lovasz_loss(y_true, y_pred):
     y_true, y_pred = K.cast(K.squeeze(y_true, -1), 'int32'), K.cast(K.squeeze(y_pred, -1), 'float32')
-    assert y_true.shape == y_pred.shape
+    assert len(y_true.shape) == len(y_pred.shape)
     logits = y_pred #Jiaxin
     loss = lovasz_hinge(logits, y_true, per_image = True, ignore = None)
     return loss
